@@ -62,13 +62,13 @@ def add_task():
         tkinter.messagebox.showwarning("Warning", "You need to enter a task.")
     txt_input.delete(0, "end")
 
-def del_all():
+'''def del_all():
     confirmed = tkinter.messagebox.askyesno("Please Confirm", "Do you really want to delete all?")
     if confirmed == True:
         c.execute("DELETE FROM Tasks1")
         c.execute("DELETE FROM Tasks2")
         update_listbox()
-        conn.commit()
+        conn.commit()'''
 
 def del_one():
     task = lb_tasks.get("active")
